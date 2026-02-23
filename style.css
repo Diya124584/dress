@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f7d6e0;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT CUPBOARD */
+.cupboard {
+    width: 25%;
+    background: #d8a7b1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.category-row button {
+    font-size: 18px;
+    padding: 6px;
+    cursor: pointer;
+    border: none;
+    background: white;
+    border-radius: 6px;
+}
+
+.items-container {
+    margin-top: 10px;
+    overflow-y: auto;
+    height: calc(100vh - 120px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.item-thumb {
+    width: 100%;
+    max-width: 55px;
+    cursor: pointer;
+}
+
+
+/* CENTER DOLL */
+.doll-area {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doll-wrapper {
+    position: relative;
+    width: 260px;
+    height: 520px;           /* important */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* start from top */
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    top: 0;    /* THIS fixes low positioning */
+}
+
+
+/* RIGHT EQUIPPED */
+.equipped {
+    width: 25%;
+    background: #f3c5d3;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#equippedList img {
+    width: 40px;
+    margin: 5px;
+}

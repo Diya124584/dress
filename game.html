@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dress Up Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- LEFT CUPBOARD -->
+    <div class="cupboard">
+
+        <div class="category-row">
+            <button onclick="loadCategory('tops')">👕</button>
+            <button onclick="loadCategory('lowers')">👖</button>
+            <button onclick="loadCategory('dresses')">👗</button>
+            <button onclick="loadCategory('shoes')">👠</button>
+            <button onclick="loadCategory('bags')">👜</button>
+            <button onclick="loadCategory('glasses')">👓</button>
+            <button onclick="loadCategory('necklace')">📿</button>
+            <button onclick="loadCategory('earrings')">💎</button>
+            <button onclick="loadCategory('hair')">💇</button>
+        </div>
+
+        <div class="items-container" id="itemsContainer"></div>
+
+    </div>
+
+
+    <!-- CENTER DOLL -->
+    <div class="doll-area">
+        <div class="doll-wrapper">
+
+            <img src="images/base.png" class="layer base">
+
+            <img id="hair" class="layer">
+            <img id="dress" class="layer">
+            <img id="top" class="layer">
+            <img id="lower" class="layer">
+            <img id="shoes" class="layer">
+            <img id="bag" class="layer">
+            <img id="glassesLayer" class="layer">
+            <img id="necklaceLayer" class="layer">
+            <img id="earringsLayer" class="layer">
+
+        </div>
+    </div>
+
+
+    <!-- RIGHT EQUIPPED -->
+    <div class="equipped">
+        <h3>Equipped</h3>
+        <div id="equippedList"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>                                                        
+
